@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JQuerySpaApp</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bower_components/mui/packages/npm/dist/css/mui.min.css">
+
+    <link rel="stylesheet" href="css/login.css">
+<!--  -->
+</head>
+<!--Document body  -->
+
+<body id="body">
+    <!--Document Header  -->
+    <header>
+        <!--navigation bar for header  -->
+        <nav class="navbar navbar-inverse" style="background-color: rgba(110, 53, 128, 0.68);">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <!--Login and Signup links  -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- <li></li> -->
+                        <!-- <li><a href="#signup">signup</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--div containe to hold the page which is called  -->
+    <div id="page-container">
+    </div>
+    <!--login page template  -->
+    <script id="login-page-template" type="text/x-handlebars-template">
+        <div id="login-page" class="page active">
+            <!--login form  -->
+            <form id="login">
+                <!--this div is for form header  -->
+                <div class="login-header">
+                    <h3>Login Form</h3>
+                </div>
+                <hr>
+                <!--this div is for form body  -->
+                <div class="form-group">
+                    <p>
+                        <label class="">Enter Your Email:</label>
+                        <input type="email" class="form-inputs-login " id="exampleInputEmaillog" value="sharma@gmail.com" placeholder="" required="">
+                        <br>
+                    </p>
+                    <p>
+                        <label class="">Enter Your Password:</label>
+                        <input type="password" class="form-inputs-login " id="exampleInputPasswordpas" value="9460863544Him@" placeholder="" required=""> <br>
+                        <br>
+                    </p>
+                    <input type="submit" id="loginsubmit" class="btn-lgin" value="Login">
+                    <br>
+                    <a href="#signup" id="signupbutton">Please New User Register here</a>
+                </div>
+                <hr>
+                <!--div for footer  -->
+                <div class="login-footer">
+                    <p id="loginresult"></p>
+                </div>
+            </form>
+        </div>
+    </script>
+    <!--signup page template  -->
+    <script id="signup-page-template" type="text/x-handlebars-template">
+        <div id="signup-page" class="page">
+            <!--signup form  -->
+            <form id="signup-form" action="#signupsuccess" method="GET">
+                <!--signup header  -->
+                <div class="signup-header">
+                    <h3>New User Registration</h3>
+                </div>
+                <hr>
+                <!--signup body  -->
+                <div class="form-group">
+                    <p>
+                        <label class="">First Name:</label>
+                        <input type="Text" class="form-inputs" id="exampleInputFirstNamelog" value = "himanshu" placeholder="">
+                        <br>
+                    </p>
+                    <p>
+                        <label class="">Second Name:</label>
+                        <input type="Text" class="form-inputs" id="exampleInputLastName" value = "gautam" placeholder="">
+                        <br>
+                    </p>
+                    <p>
+                        <label class="">Email:</label>
+                        <input type="email" class="form-inputs" id="exampleInputEnterEmail" value = "" placeholder="">
+                        <br>
+                    </p>
+                    <p>
+                        <label class="">Create password:</label>
+                        <input type="password" class="form-inputs" id="exampleInputCreatePassword" value="9460863544Him@" placeholder="">
+                        <br>
+                    </p>
+                    <!-- <p>
+                    <label class="">confirm password:</label>
+                    <input type="password" class="form-inputs" id="exampleInputConfirmPassword" placeholder="">
+                    <br>
+                  </p> -->
+                    <p>
+                        <label class="">Mobile No:</label>
+                        <input type="Text" class="form-inputs" id="exampleInputMobileNo" value = "9460863544" placeholder="">
+                        <br>
+                    </p>
+                    <p>
+                        <input type="submit" class="" id="signupsubmit" value="Submit">
+                        <br>
+                        <a href="#login" id="loginbutton">Login</a>
+                    </p>
+                </div>
+                <hr>
+                <!--signup footer  -->
+                <div class="signup-footer">
+                    <p id="result"></p>
+                </div>
+            </form>
+    </script>
+    <script src="./bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./bower_components/handlebars/handlebars.min.js" type="text/javascript"></script>
+    <!-- <script src ="./bower_components/isotope/dist/isotope.pkgd.min.js" type="text/javascript"></script> -->
+    <script  src ="./bower_components/packery/dist/packery.pkgd.min.js" type="text/javascript"></script>
+    <script  src = "./bower_components/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+    <script  src = "./bower_components/draggabilly/dist/draggabilly.pkgd.min.js" type="text/javascript"></script>
+    <script  src = "./bower_components/mui/packages/npm/dist/js/mui.min.js" type="text/javascript"></script>
+
+    <script src="./javascript/app.js"></script>
+
+</body>
+
+</html>

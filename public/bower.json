@@ -1,0 +1,25 @@
+{
+  "name": "public",
+  "homepage": "https://github.com/him26/Angular-AndNode-Login-Signup",
+  "authors": [
+    "himanshu gautam <gautamhimanshu5446@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "handlebars": "^4.0.5",
+    "jquery": "^3.2.1",
+    "isotope": "^3.0.4",
+    "jquery-ui": "jqueryui#^1.12.1",
+    "packery": "^2.1.1"
+  }
+}
